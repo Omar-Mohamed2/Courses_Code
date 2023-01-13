@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  int list1[2]={1,8};
+int list2[2];
+for( n=0; , n<2; , ++n)
+list2[n]=list1[n];
+cout <<" list[2] / n;

@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+float average (float arr[ ] , int size );
+int main()
+{ 
+int mark [ ]={25,43,76,89,78};
+cout<<' the average is <<"average ( mark[ ] , 5 ) "<< /n ";
+} 
+float average (float arr[ ] , int size )
+{  
+float sum;
+for( i=0; , i<size, ; ++i)
+sum+=sum[i] 
+cout<< " the average is <<" sum \ size  "<< /n ";
+return average ; 
+} 
+ } 
+#include <iostream>
+using namespace std;
+bool find item ( float item[ ] , int size , int searched item );
+int main() 
+{  
+int x;
+int item[ ]={34,45,67,89,90};
+cout<<" enter x  /n ";
+cin>>x; 
+if(find item ( float item[ ] , int size , int searched item == true ))
+cout<<" found /n ";
+if(find item ( float item[ ] , int size , int searched item == false ))
+cout<<" not found /n ";
+} 
+ bool find item ( float item[ ] , int size , int searched item )
+{ 
+for ( i =0 ; , i<size ; , ++i )
+if( searched item ==item[ ] )
+return found ;
+else 
+return not found ;
+} 
+}
+
+
+

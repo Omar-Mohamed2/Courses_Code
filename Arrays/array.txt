@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+
+float sum;
+float salaries [ 10 ];
+for(s=0; , s<10;, ++s)
+{ 
+cout<<" the salaries of empolyee /n ";
+cin>>salaries[s];
+}
+for ( s=0;, s<10;,++s)
+{
+salaries[s]+=salaries[s]*10%
+for (s=0; , s<10; , s++)
+}
+sum+=salaries[s]
+cout<<" the average is <<" sum[s]\10"<< /n ";
+}
+
+}
