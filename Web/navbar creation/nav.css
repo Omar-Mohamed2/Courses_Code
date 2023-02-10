@@ -1,0 +1,27 @@
+#open{
+    background-color: red;
+    border: none;
+} 
+#close{
+    background-color: red;
+    border: none;
+} 
+#open:hover{
+    cursor: pointer;
+}
+#close:hover{
+    cursor: pointer;
+}
+.contain{
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: blueviolet;
+}
+.contain:hover{
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+
