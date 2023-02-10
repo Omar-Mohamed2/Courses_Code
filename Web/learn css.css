@@ -1,0 +1,232 @@
+/* u can write css in specific file or write in html file
+<style> <\style>
+or write as an attributes for element
+syntax of css
+style element:vlaue ; or
+style element- attributes:vlaue ;
+ for call element in css there is multi ways
+1- for call div or pargraph write div or p the {}
+2-for call classes write .classname{}
+3- for call id wirte #idname {}
+4- for call other element like input write
+input[attributes with value] {}
+*/  
+
+/* first border style
+border has 3 attributes 
+1-size 2- color 3- style u can write it in a single line for each
+or write in the same line example:
+*/
+p{
+   border: 10px,red,solid;
+   border: size 10px;
+   border: color red;
+   border: style solid;
+} 
+ /* second font style
+border has many attributes 
+1-size 2- color 3- style u can write it in a single line for each
+or write in the same line example:
+*/
+p{
+   font-family: 'Courier New', Courier, monospace;
+   font-size: large;
+   color: aqua;
+   font-weight: 100; /* سمك الخط
+*/
+line-height: 20px; /* space between line */
+letter-spacing: 20px; /*space between letters */
+text-align: center; /*align statement */
+direction: ltr; /* writing direct*/
+}  
+/* color can write color with 3 ways 
+1- color red example
+2-rgp
+3-rgpa
+4- hexa decimal */
+p{
+   color: rebeccapurple;
+   background-color: rgb(red, green, blue);
+   background-color:rgba(red, green, blue, alpha);
+   opacity: ; /* شفافيه*/
+} 
+/* add background image */
+p{
+   background-image: url();
+   background-size: auto;
+   background-size: contain;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-repeat: repeat-x;
+   background-repeat: repeat-y;
+   background-attachment: scroll;
+   background-attachment: fixed;
+   background-position: left top;
+} 
+/*padding space from inside from all dierction , margin space from out side margin accept -value*/
+/* links can be controled */
+a{
+   text-decoration: line-through;
+   cursor: pointer;
+   color: antiquewhite;
+} 
+a:hover{ 
+   /* hover excute when mouse at element */
+   color: aliceblue;
+   font-size:large;
+}  
+a:visited{
+   /* visited excute when links visited only */
+}
+a:checked{ 
+   /* checked excute when element checked*/
+}
+a:focus{
+   /* foucs excute only when fousc at elemnt */
+} /*all of this for classes*/
+/* for elements say */
+p::first-letter{
+
+} 
+p::first-line{
+
+} 
+p::selection{
+
+} 
+::selection{
+   /* for all elements */
+} 
+/*after and before */
+p::after{
+   content: "bdc";
+}
+p::before{
+   content: "vdhcv";
+}
+/* display used to convert inline element to block elemnt and reverse*/
+a{
+   display: inline;
+   display: inline-block;
+}   
+/* float like display used to control element poistion */
+.x{
+   float: left; /* it case a problem remover element from work frame and can solve it using clear */
+    clear: both;
+}
+/* hidden element */
+p{
+   display:none;
+   visibility:not visible;
+   /* different between display and visible display hidden the element and put next element
+   visible hidden and save place */
+}
+/* if content large than div using overflow to mange it*/
+/* manage list*/
+ul{
+   list-style-position:;
+   list-style: ;
+   list-style-image: ;
+}
+/*position control */
+p{
+   position: relative; /*still element in work frame */
+   position:absolute; /* out element from work area */
+   position:sticky; /* make element flexiable */
+   position:static; /*default */
+
+}
+@media screen and (max-width:400px) /* control display on specific devices*/
+{
+
+}
+@media screen and (min-width:400px) and (max=width:500px) /* control display
+ on specific devices */
+{
+
+} 
+/* css varabiles 
+global v
+local v
+//declare
+:root{
+   --vname: vlaue
+} */
+p{
+   transition-duration: 0ms;
+   transition-property: ;
+   transition-delay: 0ms;
+   transition-timing-function: ease-in-out;
+   transition: all. 5s,2s;
+}
+/* animation */
+p{ 
+  transform: scale(x,y);
+  transform: rotate();
+  transform: scale() rotate();
+  transform: translate(x,y);
+  transform: skew(x,y);
+  transform: matrix(scalex,skewy,skewx,scaley.transx,transy);
+ animation-name:;
+ animation: iteration-count:infinite;
+ animation:duration : ;
+ animation-timing-function:ease; /* تقطيع في الدوران */
+  animation-timing-function:linear;   /* fixed spin */
+} 
+/*
+y{
+   transform: translate3d();
+   transform: perspective(); // become close to user
+ perspective-origin: ;
+} */
+x{
+   transform-origin: 0%;
+   transform-origin: (x,y); /* accept degree , % , left,right,bottom,top in 2d but in 3d add z variable*/
+}
+x{
+   animation-direction: reverse;
+   animation-direction: alternate;
+   animation-direction: alternate-reverse;
+   animation-fill-mode: forwards;    /* elemnets take the style of last animation mode */
+   animation-fill-mode: backwards;    
+   animation-fill-mode: both;
+
+   animation-delay: 0s;
+   animation-play-state: running;
+}
+@keyframes name of animation{ 
+   /* action  say..*/
+   0%{
+      color:red;
+   }
+   50%{
+      color:black;
+   }
+
+} 
+/* selectors 
+.class name
+#id
+element.classname
+.classname element , .classname element
+.parent class .child class
+.parent class > .child class direct child
+element+element the next element
+element ~ other elements /*مجموعه عناصر متتاليه بعد العنصر الاول الاب */
+/*
+element[attributes]
+[atrributes=value]
+[attributes~=values] conatin a words
+[attributes*=values] conatin strings words
+[attributes^=values] start with a words
+elements:first-child
+elements:last-child
+:first-of-type
+:last-of-type
+:only-child
+:only-of-type 
+:checked
+:empty
+:disabled
+:required
+*/
